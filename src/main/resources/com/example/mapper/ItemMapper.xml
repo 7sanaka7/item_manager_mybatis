@@ -27,6 +27,8 @@
 			CATEGORIES C
 		ON
 			C.ID = I.CATEGORY_ID
+		WHERE
+			I.ID = #{id}
     </select>
     
     <insert id="insert" useGeneratedKeys="true" keyColumn="ID" keyProperty="id">

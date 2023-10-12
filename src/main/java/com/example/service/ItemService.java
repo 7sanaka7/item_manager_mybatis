@@ -32,5 +32,9 @@ public class ItemService {
     	this.itemMapper.insert(item);
     }
     
+    public Item findById(Integer id) {
+    	return this.itemMapper.findById(id);
+    }
+    
  
 }
