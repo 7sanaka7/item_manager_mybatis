@@ -30,6 +30,6 @@
     </select>
     
     <insert id="insert" useGeneratedKeys="true" keyColumn="ID" keyProperty="id">
-        INSERT INTO ITEMS (ID, NAME,PRICE) VALUES (ITEM_ID_SEQ.nextval, #{name})
-    </insert>
+        INSERT INTO ITEMS (ID, NAME, PRICE, CATEGORY_ID) VALUES (ITEM_ID_SEQ.nextval, #{name}, #{price}, #{category.id})
+	</insert>
 </mapper>
