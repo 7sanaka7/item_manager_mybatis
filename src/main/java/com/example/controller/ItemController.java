@@ -67,4 +67,10 @@ public class ItemController {
     	this.itemService.update(id, itemForm.getName(), itemForm.getPrice(), itemForm.getCategoryId());
     	return "redirect:/index";
     }
+    
+    @PostMapping("/delete/{id}")
+    public String delete(@PathVariable Integer id) {
+    	this.itemService.deleteById(id);
+    	return "redirect:/index";
+    }
 }

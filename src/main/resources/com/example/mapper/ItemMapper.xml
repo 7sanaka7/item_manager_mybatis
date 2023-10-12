@@ -38,4 +38,8 @@
 	<update id="update">
          UPDATE ITEMS SET NAME = #{name}, PRICE = #{price}, CATEGORY_ID = #{category.id} WHERE ID = #{id}
         </update>
+        
+        <delete id="deleteById">
+        DELETE FROM ITEMS WHERE ID = #{id}
+        </delete>
 </mapper>
